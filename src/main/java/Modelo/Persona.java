@@ -20,6 +20,23 @@ public class Persona {
         this.telefono = telefono;
         this.fechaNacimiento = fechaNacimiento;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+    
     
     public String obtenerDatosFormateados() {
         return "Nombre: " + nombre + "\n" +

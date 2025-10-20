@@ -9,7 +9,7 @@ package Modelo;
  * @author migue
  */
 public class Profesor extends Persona {
-        private String cedula;
+    private String cedula;
     private String area;
     private double salarioHora;
     private int horasTrabajadas;
@@ -21,6 +21,23 @@ public class Profesor extends Persona {
         this.salarioHora = salarioHora;
         this.horasTrabajadas = horasTrabajadas;
     }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public double getSalarioHora() {
+        return salarioHora;
+    }
+
+    public int getHorasTrabajadas() {
+        return horasTrabajadas;
+    }
+    
     
 
     public double calcularSalario() {
