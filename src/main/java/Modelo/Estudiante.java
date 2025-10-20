@@ -17,7 +17,15 @@ public class Estudiante extends Persona{
         this.grado = grado;
         this.promedio = promedio;
     }
-    
+
+    public String getGrado() {
+        return grado;
+    }
+
+    public double getPromedio() {
+        return promedio;
+    }
+
 
     public String obtenerDatosFormateados() {
         return " DATOS DEL ESTUDIANTE \n" +
