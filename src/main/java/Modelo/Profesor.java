@@ -53,7 +53,7 @@ public class Profesor extends Persona {
     }
     
     public String obtenerDatosFormateados() {
-        return "=== DATOS DEL PROFESOR ===\n" +
+        return " DATOS DEL PROFESOR \n" +
                super.obtenerDatosFormateados() + "\n" +
                "Cédula: " + cedula + "\n" +
                "Área: " + area + "\n" +
