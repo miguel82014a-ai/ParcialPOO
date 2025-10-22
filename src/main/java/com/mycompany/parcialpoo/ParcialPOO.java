@@ -17,11 +17,11 @@ public class ParcialPOO {
     private static ArrayList<Profesor> profesores = new ArrayList<>();
     
     public static void main(String[] args) {
-                boolean continuar = true;
+        boolean continuar = true;
         
         while (continuar) {
             String opcion = JOptionPane.showInputDialog(
-                "=== SISTEMA DEL COLEGIO ===\n\n" +
+                " SISTEMA DEL COLEGIO \n\n" +
                 "1. Agregar Estudiante\n" +
                 "2. Agregar Profesor\n" +
                 "3. Ver Reporte de Estudiantes\n" +
@@ -58,7 +58,6 @@ public class ParcialPOO {
     }
     
     public static void agregarEstudiante() {
-        try {
             String nombre = JOptionPane.showInputDialog("Ingrese el nombre del estudiante:");
             String direccion = JOptionPane.showInputDialog("Ingrese la dirección:");
             String telefono = JOptionPane.showInputDialog("Ingrese el teléfono:");
@@ -70,15 +69,10 @@ public class ParcialPOO {
             Estudiante estudiante = new Estudiante(nombre, direccion, telefono, fechaNacimiento, grado, promedio);
             estudiantes.add(estudiante);
             
-            JOptionPane.showMessageDialog(null, "Estudiante agregado exitosamente!");
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Error al agregar estudiante: " + e.getMessage());
-        }
+            JOptionPane.showMessageDialog(null, "Estudiante agregado exitosamente!"); 
     }
     
-    // Método para agregar profesor
     public static void agregarProfesor() {
-        try {
             String nombre = JOptionPane.showInputDialog("Ingrese el nombre del profesor:");
             String direccion = JOptionPane.showInputDialog("Ingrese la dirección:");
             String telefono = JOptionPane.showInputDialog("Ingrese el teléfono:");
@@ -95,9 +89,6 @@ public class ParcialPOO {
             profesores.add(profesor);
             
             JOptionPane.showMessageDialog(null, "Profesor agregado exitosamente!");
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Error al agregar profesor: " + e.getMessage());
-        }
     }
     
     public static void mostrarReporteEstudiantes() {
